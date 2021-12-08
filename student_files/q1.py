@@ -9,3 +9,5 @@ hdfs_nn = sys.argv[1]
 spark = SparkSession.builder.appName("Assigment 2 Question 1").getOrCreate()
 # YOUR CODE GOES BELOW
 
+df = spark.read.csv("./data/TA_restaurants_curated_cleaned.csv'")
+df.printSchema()
